@@ -1,0 +1,190 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+h1 {
+  margin: 0;
+  padding-top: 6rem;
+  font-size: 3rem;
+  letter-spacing: 5px;
+}
+h2 {
+  color: rgb(78, 78, 78);
+  margin: 0;
+  font-weight: lighter;
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+.titles {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#fade {
+  animation-name: fadein;
+  animation-duration: 2s;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0.4;
+  }
+  66% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  margin: 0;
+  font-size: 62.5%;
+}
+
+.first {
+  height: 100vh;
+  /* background-image: url(gradient.jpg); */
+  background-size: cover;
+  text-align: center;
+  font-family: "MuseoModerno", cursive;
+}
+.second {
+  background-color: lightgrey;
+  background-size: cover;
+  height: 100vh;
+}
+
+#background {
+  animation-iteration-count: infinite;
+  animation-name: page;
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
+}
+@keyframes page {
+  0% {
+    background-color: rgb(133, 163, 154);
+  }
+  50% {
+    background-color: rgb(192, 156, 133);
+  }
+  100% {
+    background-color: rgb(133, 163, 154);
+  }
+}
+.third {
+  height: 100vh;
+  background-size: cover;
+}
+.btn {
+  font-weight: lighter;
+  margin: auto;
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  padding: 2mm;
+  width: 250px;
+  cursor: crosshair;
+  font-size: 1cm;
+  letter-spacing: 4px;
+}
+.btn-one {
+  scroll-behavior: smooth;
+  margin-top: 5cm;
+  color: rgb(7, 7, 7);
+  transition: all 0.5s;
+  position: relative;
+}
+.btn-one span {
+  transition: all 0.5s;
+}
+
+.btn-one::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.5s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(22, 22, 22, 0.712);
+  border-bottom-color: rgba(22, 22, 22, 0.712);
+  transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+  letter-spacing: 8px;
+}
+.btn-one:hover::before {
+  opacity: 0.5;
+  transform: scale(1, 1);
+}
+.btn-one::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+}
+.btn-one:hover::after {
+  opacity: 0;
+  transform: scale(0.1, 1);
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  cursor: crosshair;
+  font-family: "MuseoModerno", cursive;
+  background-color: rgba(19, 19, 19, 0.151);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  cursor: crosshair;
+  color: rgba(19, 19, 19, 0.678);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgba(19, 19, 19, 0.151);
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #4e4e4ead;
+  color: rgb(255, 255, 255);
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 0px;
+}
