@@ -1,9 +1,23 @@
-// When the user scrolls the page, execute myFunction
+function scrollWhenClicked() {
+  document.querySelector(".projects").scrollIntoView();
+}
+
+function scrollAbout() {
+  document.querySelector(".about").scrollIntoView();
+}
+
+function scrollContact() {
+  document.querySelector(".contact").scrollIntoView();
+}
+
+function scrollHome() {
+  document.querySelector(".home").scrollIntoView();
+}
+
 window.onscroll = function () {
   myFunction();
 };
 
-// Get the navbar
 var navbar = document.getElementById("myTopnav");
 
 // Get the offset position of the navbar
@@ -16,9 +30,4 @@ function myFunction() {
   } else {
     navbar.classList.remove("sticky");
   }
-}
-//change below at some point!
-var elmnt = document.getElementsById("#btn btn-one");
-function scrollWhenClicked() {
-  elmnt.onclick = scrollBy(0, 800);
 }

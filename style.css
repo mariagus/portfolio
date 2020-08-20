@@ -5,7 +5,6 @@ html {
 }
 h1 {
   margin: 0;
-  padding-top: 6rem;
   font-size: 3rem;
   letter-spacing: 5px;
 }
@@ -41,18 +40,23 @@ h2 {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0;
   font-size: 62.5%;
 }
 
-.first {
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100vh;
-  /* background-image: url(gradient.jpg); */
   background-size: cover;
   text-align: center;
   font-family: "MuseoModerno", cursive;
 }
-.second {
+.projects {
   background-color: lightgrey;
   background-size: cover;
   height: 100vh;
@@ -81,7 +85,7 @@ body {
 }
 .btn {
   font-weight: lighter;
-  margin: auto;
+  margin: 50px auto;
   line-height: 50px;
   height: 50px;
   text-align: center;
@@ -93,7 +97,6 @@ body {
 }
 .btn-one {
   scroll-behavior: smooth;
-  margin-top: 5cm;
   color: rgb(7, 7, 7);
   transition: all 0.5s;
   position: relative;

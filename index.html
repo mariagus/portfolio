@@ -10,31 +10,25 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
-    <section class="first" id="background">
+    <section class="home" id="background">
       <div class="topnav" id="myTopnav">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="#home" class="active" onclick="scrollHome()">Home</a>
+        <a href="#about" onclick="scrollAbout()">About</a>
+        <a href="#projects" onclick="scrollWhenClicked()">Projects</a>
+        <a href="#contact" onclick="scrollContact()">Contact</a>
         <a href="https://github.com/mariagus">GitHub</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
       </div>
       <div class="titles">
         <h1 id="fade">Maria Gusova</h1>
         <h2 class="job-title" id="fade">software developer</h2>
       </div>
-      <div class="btn btn-one" onclick="scrollWhenClicked()">
+      <div class="btn btn-one" href="#projects" onclick="scrollWhenClicked()">
         <span>projects</span>
       </div>
     </section>
-    <section class="second" id="background">
-      <p style="margin: 0;"></p>
-    </section>
-    <section class="third" id="background">
-      <p style="margin: 0;"></p>
-    </section>
-
+    <section class="projects" href="#projects" id="background"></section>
+    <section class="about" id="background"></section>
+    <section class="contact" href="#contact" id="background"></section>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
     <link
