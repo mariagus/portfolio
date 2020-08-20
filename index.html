@@ -2,38 +2,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Maria Gusova</title>
   </head>
   <body>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!-- Navbar -->
+    <nav class="nav" id="navbar" class="sticky">
+      <a href="#home" class="section active">Home</a>
+      <a href="#about" class="section">About</a>
+      <a href="#projects" class="section">Projects</a>
+      <a href="#contact" class="section">Contact</a>
+      <!-- <a href="https://github.com/mariagus" target="_blank">GitHub</a> -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
 
-    <section class="home" id="background">
-      <div class="topnav" id="myTopnav">
-        <a href="#home" class="section active" onclick="scrollHome()">Home</a>
-        <a href="#about" class="section" onclick="scrollAbout()">About</a>
-        <a href="#projects" class="section" onclick="scrollWhenClicked()"
-          >Projects</a
-        >
-        <a href="#contact" class="section" onclick="scrollContact()">Contact</a>
-        <a href="https://github.com/mariagus">GitHub</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
+    <!-- Home Section -->
+    <section id="home" class="background">
       <div class="titles">
         <h1 id="fade">Maria Gusova</h1>
         <h2 class="job-title" id="fade">software developer</h2>
       </div>
+      <div class="spacer"></div>
       <div class="btn btn-one" href="#projects" onclick="scrollWhenClicked()">
         <span>projects</span>
       </div>
     </section>
-    <section class="projects" href="#projects" id="background"></section>
-    <section class="about" id="background"></section>
-    <section class="contact" href="#contact" id="background"></section>
+
+    <!-- Projects Section -->
+    <section id="projects" href="#projects" class="background"></section>
+
+    <!-- About Section -->
+    <section id="about" class="background"></section>
+    <!-- Contact Section -->
+    <section id="contact" href="#contact" class="background"></section>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
     <link
