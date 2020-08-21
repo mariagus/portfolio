@@ -1,11 +1,22 @@
-// projects button scroll function:
+window.onscroll = function () {
+  makeSticky();
+};
 
-function scrollWhenClicked() {
-  window.location.href = "#projects";
-  document.querySelector("#projects").scrollIntoView();
+var navBar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navBar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function makeSticky() {
+  if (window.pageYOffset >= sticky) {
+    navBar.classList.add("sticky");
+  } else {
+    navBar.classList.remove("sticky");
+  }
 }
 
-function myFunction() {
+function responsiveNav() {
   var x = document.getElementById("navbar");
   if (x.className === "nav") {
     x.className += " responsive";
@@ -13,8 +24,6 @@ function myFunction() {
     x.className = "nav";
   }
 }
-// Get the container element
-const navbar = document.getElementById("navbar");
 
 // Get all buttons with class="btn" inside the container
 const section = document.getElementsByClassName("section");

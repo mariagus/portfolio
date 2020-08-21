@@ -154,6 +154,7 @@ body {
 
 /* Add a black background color to the top navigation */
 .nav {
+  overflow: hidden;
   width: 100%;
   position: fixed;
   top: 0;
@@ -165,8 +166,10 @@ body {
 /* Style the links inside the navigation bar */
 .nav a {
   float: left;
+  display: block;
   cursor: crosshair;
   color: rgba(19, 19, 19, 0.678);
+  background-color: rgba(19, 19, 19, 0.151);
   text-align: center;
   padding: 12px 16px;
   text-decoration: none;
@@ -181,7 +184,7 @@ body {
 
 /* Add an active class to highlight the current page */
 .nav a.active {
-  background-color: #4e4e4ead;
+  background-color: rgba(19, 19, 19, 0.151);
   color: rgb(255, 255, 255);
 }
 
@@ -215,3 +218,13 @@ body {
   }
 }
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 0px;
+}
