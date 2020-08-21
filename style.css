@@ -3,6 +3,13 @@ html {
   margin: 0;
   scroll-behavior: smooth;
 }
+
+.titles {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 h1 {
   margin: 0;
   font-size: 3rem;
@@ -10,17 +17,12 @@ h1 {
 }
 h2 {
   color: rgb(78, 78, 78);
-  margin: 0;
+  margin-top: 2rem;
   font-weight: lighter;
   font-size: 2rem;
   letter-spacing: 5px;
 }
-.titles {
-  padding-top: 4rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
+
 #fade {
   animation-name: fadein;
   animation-duration: 2s;
@@ -55,16 +57,31 @@ body {
   font-family: "MuseoModerno", cursive;
 }
 #projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: lightgrey;
   background-size: cover;
-  height: 100vh;
 }
 .previews {
+  vertical-align: inherit;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+}
+@media screen and (max-width: 600px) {
+  .previews {
+    flex-wrap: wrap;
+    max-height: 100%;
+  }
+  #projects {
+    height: fit-content;
+  }
 }
 .image {
-  height: 100vh;
+  max-width: 100%;
+  flex-shrink: inherit;
+  overflow: hidden;
 }
 #about {
   background-color: lightgrey;
@@ -167,7 +184,7 @@ body {
   top: 0;
   cursor: crosshair;
   font-family: "MuseoModerno", cursive;
-  background-color: rgba(19, 19, 19, 0.151);
+  background-color: rgba(19, 19, 19, 0.404);
 }
 
 /* Style the links inside the navigation bar */
@@ -175,8 +192,7 @@ body {
   float: left;
   display: block;
   cursor: crosshair;
-  color: rgba(19, 19, 19, 0.678);
-
+  color: black;
   text-align: center;
   padding: 12px 16px;
   text-decoration: none;
@@ -222,6 +238,8 @@ body {
     float: none;
     display: block;
     text-align: left;
+    background-color: rgba(129, 129, 129, 0.884);
+    font-size: 1rem;
   }
 }
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */

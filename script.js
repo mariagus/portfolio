@@ -1,3 +1,7 @@
+function scrollWhenClicked() {
+  document.querySelector("#projects").scrollIntoView();
+}
+
 window.onscroll = function () {
   makeSticky();
 };
