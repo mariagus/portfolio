@@ -54,7 +54,7 @@ body {
   height: 100vh;
   background-size: cover;
   text-align: center;
-  font-family: "MuseoModerno", cursive;
+  font-family: "MuseoModerno", "Courier New", Courier, monospace;
 }
 #projects {
   display: flex;
@@ -87,6 +87,22 @@ body {
   background-color: lightgrey;
   background-size: cover;
   height: 100vh;
+}
+.aboutMe {
+  padding: 10%;
+  font-size: 1rem;
+  font-family: "MuseoModerno", "Courier New", Courier, monospace;
+}
+.aboutTitle {
+  font-weight: bold;
+  font-size: larger;
+  text-align: center;
+  padding: 2%;
+  letter-spacing: 3px;
+}
+.aboutParagraph {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: lighter;
 }
 
 .background {
@@ -183,8 +199,9 @@ body {
   position: fixed !important;
   top: 0;
   cursor: crosshair;
-  font-family: "MuseoModerno", cursive;
-  background-color: rgba(19, 19, 19, 0.404);
+  font-family: "MuseoModerno", "Courier New", Courier, monospace;
+
+  background-color: rgba(90, 90, 90, 0.815);
 }
 
 /* Style the links inside the navigation bar */
@@ -222,6 +239,7 @@ body {
   .nav a.icon {
     float: right;
     display: block;
+    margin-top: 1%;
   }
 }
 
@@ -239,17 +257,5 @@ body {
     display: block;
     text-align: left;
     background-color: rgba(129, 129, 129, 0.884);
-    font-size: 1rem;
   }
-}
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 0px;
 }
