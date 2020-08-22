@@ -143,6 +143,20 @@ body {
   height: 100vh;
   background-size: cover;
 }
+.contactMe {
+  text-align: center;
+}
+.contactBtn {
+  background-color: transparent;
+  border-style: solid;
+  border-color: black;
+  padding: 1.5rem;
+  font-size: 1rem;
+  font-family: "MuseoModerno", "Courier New", Courier, monospace;
+}
+.contactBtn:hover {
+  background-color: white;
+}
 .btn {
   font-weight: lighter;
   margin: 50px auto;
