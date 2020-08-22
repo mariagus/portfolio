@@ -56,14 +56,7 @@ body {
   text-align: center;
   font-family: "MuseoModerno", "Courier New", Courier, monospace;
 }
-.profilePic {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 200px;
-  width: 200px;
-  padding: 2rem;
-}
+
 #projects {
   display: flex;
   flex-direction: column;
@@ -117,6 +110,15 @@ body {
   text-align: center;
   letter-spacing: 3px;
 }
+.profilePic {
+  padding-bottom: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  width: 200px;
+  padding: 0;
+}
 .aboutParagraph {
   font-family: "Courier New", Courier, monospace;
   font-weight: lighter;
@@ -144,18 +146,32 @@ body {
   background-size: cover;
 }
 .contactMe {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  padding-top: 10%;
 }
 .contactBtn {
+  width: 250px;
   background-color: transparent;
   border-style: solid;
   border-color: black;
-  padding: 1.5rem;
-  font-size: 1rem;
+  padding: 1rem;
+  font-size: 1.5rem;
   font-family: "MuseoModerno", "Courier New", Courier, monospace;
 }
+.iconsContainer {
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.icon {
+  padding: 20px;
+}
 .contactBtn:hover {
-  background-color: white;
+  border-color: white;
+  color: white;
 }
 .btn {
   font-weight: lighter;
