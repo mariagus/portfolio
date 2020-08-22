@@ -214,10 +214,11 @@ body {
   overflow: hidden;
   width: 100%;
   position: fixed !important;
+  color: white;
   top: 0;
   font-family: "MuseoModerno", "Courier New", Courier, monospace;
 
-  background-color: rgba(19, 19, 19, 0.151);
+  background-color: rgba(0, 0, 0, 0.822);
 }
 
 /* Style the links inside the navigation bar */
@@ -225,7 +226,7 @@ body {
   float: left;
   display: block;
   cursor: crosshair;
-  color: black;
+  color: white;
   text-align: center;
   padding: 12px 16px;
   text-decoration: none;
@@ -234,7 +235,7 @@ body {
 
 /* Change the color of links on hover */
 .nav a:hover {
-  background-color: rgba(19, 19, 19, 0.151);
+  background-color: rgba(255, 255, 255, 0.822);
   color: black;
 }
 
@@ -268,6 +269,7 @@ body {
     position: relative;
   }
   .nav.responsive .icon {
+    color: black;
     position: absolute;
     right: 0;
     top: 0;
@@ -277,10 +279,11 @@ body {
     background-color: transparent;
   }
   .nav.responsive a {
+    color: black;
     float: none;
     display: block;
     text-align: left;
-    background-color: rgba(19, 19, 19, 0.151);
+    background-color: rgba(255, 255, 255, 0.822);
   }
   .nav.responsive a:hover {
     background-color: rgba(177, 175, 175, 0.884);
