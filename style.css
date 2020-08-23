@@ -68,13 +68,13 @@ body {
   vertical-align: inherit;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .previews2 {
   vertical-align: inherit;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 @media screen and (max-width: 600px) {
   .previews {
@@ -103,6 +103,7 @@ body {
   padding: 5%;
   font-size: 1rem;
   font-family: "MuseoModerno", "Courier New", Courier, monospace;
+  text-align: center;
 }
 .aboutTitle {
   font-weight: bold;
