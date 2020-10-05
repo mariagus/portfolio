@@ -121,6 +121,7 @@ body {
   height: 200px;
   width: 200px;
   padding: 0;
+  border-radius: 50%;
 }
 .aboutParagraph {
   font-family: "Courier New", Courier, monospace;
