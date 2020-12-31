@@ -70,29 +70,25 @@ body {
   flex-direction: row;
   justify-content: center;
 }
-.previews2 {
-  vertical-align: inherit;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+
 @media screen and (max-width: 600px) {
   .previews {
     flex-wrap: wrap;
     max-height: 100%;
   }
-  .previews2 {
-    flex-wrap: wrap;
-    max-height: 100%;
-  }
+
   #projects {
     height: fit-content;
   }
 }
 .image {
-  max-width: 100%;
+  max-width: 95%;
   flex-shrink: inherit;
   overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+a {
+  text-align: center;
 }
 #about {
   background-color: lightgrey;
