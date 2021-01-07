@@ -268,7 +268,6 @@ a {
 /* Change the color of links on hover */
 .nav a:hover {
   background-color: rgba(255, 255, 255, 0.822);
-  color: black;
 }
 
 /* Add an active class to highlight the current page */
