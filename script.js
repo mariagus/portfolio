@@ -12,14 +12,11 @@ window.onscroll = function () {
 
 var navBar = document.getElementById("navbar");
 
-// Get the offset position of the navbar
-
 function responsiveNav() {
-  var x = document.getElementById("navbar");
-  if (x.className === "nav") {
-    x.className += " responsive";
+  if (navBar.className === "nav") {
+    navBar.className += " responsive";
   } else {
-    x.className = "nav";
+    navBar.className = "nav";
   }
 }
 
@@ -31,5 +28,6 @@ for (var i = 0; i < section.length; i++) {
     var current = document.getElementsByClassName("active");
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
+    navBar.className = "nav";
   });
 }
