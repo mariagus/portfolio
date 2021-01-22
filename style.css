@@ -87,6 +87,9 @@ body {
   overflow: hidden;
   margin-bottom: 1.5rem;
 }
+.image:hover {
+  opacity: 0.5;
+}
 a {
   text-align: center;
 }
